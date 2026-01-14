@@ -1,8 +1,16 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir avec serveur PHP]
-@="Ouvrir avec serveur PHP"
+@="Ouvrir avec serveur PHP (fichier)"
 "Icon"="cmd.exe"
 
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir avec serveur PHP\command]
 @="cmd.exe /k php -S localhost:555 \"%1\""
+
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir serveur PHP (dossier)]
+@="Ouvrir serveur PHP (dossier)"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir serveur PHP (dossier)\command]
+@="cmd.exe /k php -S localhost:555"
