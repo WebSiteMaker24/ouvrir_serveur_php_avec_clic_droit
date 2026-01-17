@@ -1,5 +1,8 @@
 Windows Registry Editor Version 5.00
 
+
+; ===== OUVRIR AVEC SERVEUR PHP (FICHIER) =====
+
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir avec serveur PHP]
 @="Ouvrir avec serveur PHP (fichier)"
 "Icon"="cmd.exe"
@@ -7,6 +10,8 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir avec serveur PHP\command]
 @="cmd.exe /k php -S localhost:555 \"%1\""
 
+
+; ===== OUVRIR SERVEUR PHP (DOSSIER) =====
 
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir serveur PHP (dossier)]
 @="Ouvrir serveur PHP (dossier)"
@@ -35,3 +40,12 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Ouvrir dans VS Code\command]
 @="cmd.exe /k code ."
 
+
+; ===== AFFICHER L'ARBORESCENCE DU DOSSIER (TREE) =====
+
+[HKEY_CLASSES_ROOT\Directory\shell\Afficher l'arborescence]
+@="Afficher l'arborescence (tree)"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Afficher l'arborescence\command]
+@="cmd.exe /k cd /d \"%V\" && tree /a /f"
