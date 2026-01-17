@@ -14,3 +14,24 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.php\shell\Ouvrir serveur PHP (dossier)\command]
 @="cmd.exe /k php -S localhost:555"
+
+
+; ===== OUVRIR DANS VS CODE (DOSSIER) =====
+
+[HKEY_CLASSES_ROOT\Directory\shell\Ouvrir dans VS Code]
+@="Ouvrir dans VS Code"
+"Icon"="code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Ouvrir dans VS Code\command]
+@="cmd.exe /k cd /d \"%1\" && code ."
+
+
+; ===== OUVRIR DANS VS CODE (CLIC DROIT DANS LE DOSSIER) =====
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Ouvrir dans VS Code]
+@="Ouvrir dans VS Code"
+"Icon"="code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Ouvrir dans VS Code\command]
+@="cmd.exe /k code ."
+
