@@ -49,3 +49,14 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\Afficher l'arborescence\command]
 @="cmd.exe /k cd /d \"%V\" && tree /a /f"
+
+; ===== COPIER LE CHEMIN COMPLET DU FICHIER =====
+
+[HKEY_CLASSES_ROOT\*\shell\Copier le chemin complet]
+@="Copier le chemin complet"
+"Icon"="imageres.dll,5302"
+
+[HKEY_CLASSES_ROOT\*\shell\Copier le chemin complet\command]
+@="cmd.exe /c echo %1 | clip"
+
+
