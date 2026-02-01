@@ -1,4 +1,4 @@
-# 📁 Menu contextuel Windows – Outils développeur
+# 📁 Menu contextuel Windows - Outils développeur
 
 Ce script de registre Windows ajoute plusieurs **actions personnalisées au clic droit** dans l’Explorateur de fichiers.  
 Il est destiné à améliorer la productivité, notamment pour le développement PHP et le travail sur des dossiers de projet.
